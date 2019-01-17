@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LaundryHome"
+    tools:showIn="@layout/app_bar_laundry_home">
+
+    <fragment
+        android:layout_below="@+id/layout_panel"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LaundryMapsActivity" >
+
+    </fragment>
+
+    <android.support.v7.widget.CardView
+        app:cardElevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_margin="16dp">
+
+            <com.github.glomadrian.materialanimatedswitch.MaterialAnimatedSwitch
+                android:id="@+id/location_switch"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                app:icon_release="@drawable/ic_location_off"
+                app:icon_press="@drawable/ic_location_on"
+                app:base_release_color = "@color/ballReleaseColor"
+                app:base_press_color = "@color/basePressColor"
+                app:ball_release_color = "@color/ballReleaseColor"
+                app:ball_press_color = "@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_find_user"
+                android:layout_weight="7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Find Customer"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

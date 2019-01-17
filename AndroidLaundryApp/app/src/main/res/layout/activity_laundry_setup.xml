@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaundrySetupActivity"
+    android:background="@color/shada">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/laundry_setup_profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="@color/tomato"
+        app:civ_border_width="3dp" />
+
+
+    <EditText
+        android:id="@+id/laundry_setup_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/laundry_setup_profile_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/username"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/laundry_setup_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/laundry_setup_username"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/name"
+        android:ems="10"
+        android:hint="Fullname"
+        android:inputType="textPersonName"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/laundry_setup_phone_number"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/laundry_setup_fullname"
+        android:layout_alignStart="@+id/laundry_setup_fullname"
+        android:layout_alignEnd="@+id/laundry_setup_fullname"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/phone_icon"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="12dp" />
+
+
+    <EditText
+        android:id="@+id/laundry_setup_address"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/laundry_setup_phone_number"
+        android:layout_alignStart="@+id/laundry_setup_username"
+        android:layout_alignEnd="@+id/laundry_setup_username"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/location_icon"
+        android:ems="10"
+        android:hint="Address(House,Street,City)"
+        android:inputType="textMultiLine"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/laundry_setup_button"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/laundry_setup_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_corners"
+        android:padding="15dp"
+        android:text="save"
+        android:textColor="@color/shada"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/laundry_setup_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/laundry_setup_username"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="Setting up Laundry profile.. . "
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:textStyle="italic"/>
+
+</RelativeLayout>

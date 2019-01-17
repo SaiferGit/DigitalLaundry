@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+
+    <item
+        android:id="@+id/nav_request_pickup"
+        android:title="Request Pickup"
+        android:icon="@drawable/request_pickup_icon"/>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profile"
+        android:icon="@drawable/profile_icon"/>
+
+    <item
+        android:id="@+id/nav_contract"
+        android:title="Contract"
+        android:icon="@drawable/contract_with_us_icon"/>
+
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@drawable/settings"/>
+
+    <item
+        android:id="@+id/nav_prices"
+        android:title="Prices"
+        android:icon="@drawable/taka_icon"/>
+
+    <item
+        android:id="@+id/nav_faq"
+        android:title="FAQ's"
+        android:icon="@drawable/faq_icon"/>
+
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Log Out"
+        android:icon="@drawable/logout"/>
+
+
+</menu>
