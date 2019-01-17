@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".ContractsFragment"
+    android:background="@drawable/colorful2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8609ca"
+        android:gravity="center_horizontal"
+        android:paddingBottom="3dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="3dp"
+        android:text="Our Donors"
+        android:textColor="@color/shada"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_front"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                card_view:cardBackgroundColor="@color/shada"
+                card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/address"
+                        android:drawablePadding="8dp"
+                        android:paddingTop="5dp"
+                        android:text="11-Shahjalal University Gate, Akhalia, Sylhet, Bangladesh"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/timings"
+                        android:drawablePadding="8dp"
+                        android:paddingTop="5dp"
+                        android:text="10:00AM–8:30PM (Friday Closed)"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/phone"
+                        android:drawablePadding="8dp"
+                        android:paddingTop="5dp"
+                        android:text="+8801719307020"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_back"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:visibility="gone"
+                card_view:cardBackgroundColor="@color/shada"
+                card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/Contract_button_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_tomato"
+                        android:text="Call"
+                        android:textAllCaps="false"
+                        android:textColor="#ffff"
+                        android:textSize="14sp"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/Contract_button_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/rounded_tomato"
+                        android:text="Locate"
+                        android:textAllCaps="false"
+                        android:textColor="#ffff"
+                        android:textSize="14sp" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/Contract_button_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/rounded_tomato"
+                        android:text="Profile"
+                        android:textAllCaps="false"
+                        android:textColor="#ffff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/root_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_front2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                card_view:cardBackgroundColor="@color/shada"
+                card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:weightSum="0.5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/address"
+                        android:drawablePadding="8dp"
+                        android:paddingTop="5dp"
+                        android:text="32-Pallabi, Modina Market, Akhalia, Sylhet"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/timings"
+                        android:drawablePadding="8dp"
+                        android:paddingTop="5dp"
+                        android:text="9:00AM–8:00PM (Tuesday Closed)"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/phone"
+                        android:drawablePadding="8dp"
+                        android:paddingTop="5dp"
+                        android:text="+8801784939769"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_back2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:visibility="gone"
+                card_view:cardBackgroundColor="@color/shada"
+                card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/Contract_button_call2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_tomato"
+                        android:text="Call"
+                        android:textAllCaps="false"
+                        android:textColor="#ffff"
+                        android:textSize="14sp"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/Contract_button_location2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_tomato"
+                        android:layout_marginLeft="20dp"
+                        android:text="Locate"
+                        android:textAllCaps="false"
+                        android:textColor="#ffff"
+                        android:textSize="14sp" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/Contract_button_profile2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_tomato"
+                        android:layout_marginLeft="20dp"
+                        android:text="Profile"
+                        android:textAllCaps="false"
+                        android:textColor="#ffff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_faqs"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/rounded_corners"
+        android:text="FAQs"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+        android:textSize="17sp" />
+
+
+
+
+</RelativeLayout>

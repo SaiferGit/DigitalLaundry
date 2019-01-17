@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment"
+    android:background="@color/shada">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:civ_border_color="@color/tomato"
+        android:src="@drawable/profile"
+        app:civ_border_width="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/error" />
+
+
+    <TextView
+        android:id="@+id/profiletxt_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Name:  "
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/profile_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:padding="10dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/border"
+        android:hint="name"/>
+
+    <TextView
+        android:id="@+id/profiletxt_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_fullname"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="Username:"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/profile_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_fullname"
+        android:padding="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/border"
+        android:hint="username"/>
+
+    <TextView
+        android:id="@+id/profiletxt_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_username"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Phone:"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/profile_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_username"
+        android:padding="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/border"
+        android:hint="phone no"/>
+
+    <TextView
+        android:id="@+id/profiletxt_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_phone"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Address:"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/profile_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_phone"
+        android:padding="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/border"
+        android:hint="address"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:id="@+id/profile_update_button"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_address"
+        android:layout_marginTop="30dp"
+        android:padding="12dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_tomato"
+        android:text="Update Profile"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/shada"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>

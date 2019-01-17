@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserRegisterActivity"
+    android:background="@drawable/colorful">
+
+    <ImageView
+        android:id="@+id/user_register_uporer_chobi"
+        android:layout_width="164dp"
+        android:layout_height="117dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:src="@drawable/uporer_chobi" />
+
+    <TextView
+        android:id="@+id/user_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_register_uporer_chobi"
+        android:layout_alignEnd="@+id/user_register_uporer_chobi"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="-32dp"
+        android:background="@color/shada"
+        android:text="Customer Register"
+        android:textColor="@color/tomato"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/user_register_mail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/user_register_uporer_chobi"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/launcher_email"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/user_register_pass"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_register_mail"
+        android:layout_alignStart="@+id/user_register_mail"
+        android:layout_alignEnd="@+id/user_register_mail"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/launcher_password"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+
+    <EditText
+        android:id="@+id/user_register_confirm_pass"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_register_pass"
+        android:layout_alignStart="@+id/user_register_mail"
+        android:layout_alignEnd="@+id/user_register_mail"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/launcher_password"
+        android:ems="10"
+        android:hint="Retype your Password"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="262dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/user_register_confirm_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_corners"
+        android:text="Sign Up "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/user_register_button"
+        android:textColor="@color/shada" />
+
+    <TextView
+        android:id="@+id/user_register_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_register_button"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:text="Already a member? Login Here"
+        android:textColor="@color/Black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

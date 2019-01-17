@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A61646</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="shada">#ffffff</color>
+    <color name="tomato">#f06449</color>
+    <color name="logocolor">#c77176</color>
+    <color name="Flirt">#c45aa1</color>
+    <color name="graylight">#e4e4e4</color>
+    <color name="logo_accent">#cf566f</color>
+    <color name="Black">#000000</color>
+    <color name="gray">#d3d3d3</color>
+    <color name="orange">#f58021</color>
+    <color name="dividerColor">#1F000000</color>
+
+    <color name="baseReleaseColor">#212121</color>
+    <color name="basePressColor">#FAFAFA</color>
+    <color name="ballReleaseColor">#9E9E9E</color>
+</resources>
