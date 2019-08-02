@@ -1,2 +1,1 @@
-# DigitalLaundry
-#java #android #Firebase
+A unfinished project, where a customer can search for nearby laundry in map and the laundry can accept or decline the order just like a phone call. The customer can watch accepting laundryman path using map and will be notified if the laundry man reaches nearby (just like UBER).
